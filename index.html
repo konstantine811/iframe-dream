@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="flex items-center h-screen p-3 gap-10">
+      <div class="max-w-[500px] pr-10">
+        <div>
+          <h1 class="text-3xl font-bold grow text-center">Звичайна карта</h1>
+          <div class="rounded-2xl bg-blue-400 inline-block text-white px-2">
+            Code:
+          </div>
+        </div>
+        <div class="p-4 rounded-lg code">
+          <code class="language-html break-words">
+            &lt;iframe id="inlineFrameExample" title="Inline Frame Example"
+            src="https://staging.map.dream.gov.ua" &gt; &lt;/iframe&gt;
+          </code>
+        </div>
+      </div>
+      <iframe
+        class="h-[calc(100svh-100px)] border grow rounded-lg"
+        id="inlineFrameExample"
+        title="Inline Frame Example"
+        src="https://staging.map.dream.gov.ua"
+      >
+      </iframe>
+    </div>
+
+    <div class="flex items-center h-screen p-3 gap-10">
+      <div class="max-w-[500px] pr-10">
+        <div>
+          <h1 class="text-3xl font-bold grow text-center">
+            Карта по харчоблокам
+          </h1>
+          <div class="rounded-2xl bg-blue-400 inline-block text-white px-2">
+            Code:
+          </div>
+        </div>
+        <div class="p-4 rounded-lg code break-words">
+          <code class="language-html">
+            &lt;iframe id="inlineFrameExample" title="Inline Frame Example"
+            src="https://staging.map.dream.gov.ua/?activeFilter=foodBlock&filter_foodBlock=basic&filter_foodBlock=sustaining&filter_foodBlock=diningArea"
+            &gt; &lt;/iframe&gt;
+          </code>
+        </div>
+      </div>
+      <iframe
+        class="h-[calc(100svh-100px)] border grow rounded-lg"
+        id="inlineFrameExample"
+        title="Inline Frame Example"
+        src="https://staging.map.dream.gov.ua/?activeFilter=foodBlock&filter_foodBlock=basic&filter_foodBlock=sustaining&filter_foodBlock=diningArea"
+      >
+      </iframe>
+    </div>
+
+    <div class="flex items-center h-screen p-3 gap-10">
+      <div class="max-w-[500px] pr-10">
+        <div>
+          <h1 class="text-3xl font-bold grow text-center">
+            Тип балансоутримувача: Адміністрація
+          </h1>
+          <div class="rounded-2xl bg-blue-400 inline-block text-white px-2">
+            Code:
+          </div>
+        </div>
+        <div class="p-4 rounded-lg code break-words">
+          <code class="language-html">
+            &lt;iframe id="inlineFrameExample" title="Inline Frame Example"
+            src="https://staging.map.dream.gov.ua/?activeFilter=balanceHolderType&filter_balanceHolderType=administration"
+            &gt; &lt;/iframe&gt;
+          </code>
+        </div>
+      </div>
+      <iframe
+        class="h-[calc(100svh-100px)] border grow rounded-lg"
+        id="inlineFrameExample"
+        title="Inline Frame Example"
+        src="https://staging.map.dream.gov.ua/?activeFilter=balanceHolderType&filter_balanceHolderType=administration"
+      >
+      </iframe>
+    </div>
+
+    <div class="flex items-center h-screen p-3 gap-10">
+      <div class="max-w-[500px] pr-10">
+        <div>
+          <h1 class="text-3xl font-bold grow text-center">
+            Виділений обʼєкт за допомогою code id
+          </h1>
+          <div class="rounded-2xl bg-blue-400 inline-block text-white px-2">
+            Code:
+          </div>
+        </div>
+        <div class="p-4 rounded-lg code break-words">
+          <code class="language-html">
+            &lt;iframe id="inlineFrameExample" title="Inline Frame Example"
+            src="https://staging.map.dream.gov.ua/?object_id=DREAM-UA-051023-1AA151CE"
+            &gt; &lt;/iframe&gt;
+          </code>
+        </div>
+      </div>
+      <iframe
+        class="h-[calc(100svh-100px)] border grow rounded-lg"
+        id="inlineFrameExample"
+        title="Inline Frame Example"
+        src="https://staging.map.dream.gov.ua/?object_id=DREAM-UA-051023-1AA151CE"
+      >
+      </iframe>
+    </div>
+
+    <div class="flex items-center h-screen p-3 gap-10">
+      <div class="max-w-[500px] pr-10">
+        <div>
+          <h1 class="text-3xl font-bold grow text-center">
+            Виділений фільтр з РПЗМ та обʼєкт за допомогою code id
+          </h1>
+          <div class="rounded-2xl bg-blue-400 inline-block text-white px-2">
+            Code:
+          </div>
+        </div>
+        <div class="p-4 rounded-lg code break-words">
+          <code class="language-html">
+            &lt;iframe id="inlineFrameExample" title="Inline Frame Example"
+            src="https://staging.map.dream.gov.ua/?activeFilter=registrationRpzm&filter_registrationRpzm=rpzm&object_id=DREAM-UA-270923-6B5919CF"
+            &gt; &lt;/iframe&gt;
+          </code>
+        </div>
+      </div>
+      <iframe
+        class="h-[calc(100svh-100px)] border grow rounded-lg"
+        id="inlineFrameExample"
+        title="Inline Frame Example"
+        src="https://staging.map.dream.gov.ua/?activeFilter=registrationRpzm&filter_registrationRpzm=rpzm&object_id=DREAM-UA-270923-6B5919CF"
+      >
+      </iframe>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
